@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://1riw2y0qq20e"]
+
+[node name="Trave" type="Node2D" unique_id=84400116]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=54355973]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1375552436]
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=2096993392]
