@@ -1,4 +1,25 @@
 [gd_scene format=3 uid="uid://bfbk8vqxwm8bo"]
 
+[ext_resource type="Texture2D" uid="uid://purhsxawrhnf" path="res://microjogos/2026S1/projeto-lucas/recursos/imagens/Moon_Phases_128x128/Moon_Phase_1.png" id="1_8gt0s"]
+[ext_resource type="PackedScene" uid="uid://wsioy633wf24" path="res://microjogos/2026S1/projeto-lucas/cenas/nave.tscn" id="2_1lqsv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jmy3m"]
+radius = 151.21178
+
 [node name="Main" type="Node2D" unique_id=1597121372]
 texture_filter = 1
+
+[node name="Lua" type="StaticBody2D" parent="." unique_id=1529448306]
+position = Vector2(1526, 571)
+
+[node name="Sprite2D" type="Sprite2D" parent="Lua" unique_id=325458057]
+scale = Vector2(2.3828125, 2.3828125)
+texture = ExtResource("1_8gt0s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lua" unique_id=93705795]
+visible = false
+shape = SubResource("CircleShape2D_jmy3m")
+
+[node name="Nave" parent="." unique_id=1611160911 instance=ExtResource("2_1lqsv")]
+position = Vector2(414.99997, 570.99994)
+scale = Vector2(1.54, 1.54)

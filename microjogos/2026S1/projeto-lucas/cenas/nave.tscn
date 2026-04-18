@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://wsioy633wf24"]
+
+[ext_resource type="Script" uid="uid://dckv6nj1rcrr5" path="res://microjogos/2026S1/projeto-lucas/cenas/scripts/nave.gd" id="1_7xgnn"]
+[ext_resource type="Texture2D" uid="uid://dp5t6ykdkfc3k" path="res://microjogos/2026S1/projeto-lucas/recursos/imagens/ship.png" id="1_ff7sh"]
+
+[node name="Nave" type="CharacterBody2D" unique_id=1611160911]
+script = ExtResource("1_7xgnn")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=33833964]
+visible = false
+position = Vector2(8.940697e-08, -4)
+scale = Vector2(0.90000004, 1.2)
+polygon = PackedVector2Array(-9.934108e-08, -10.833334, 10, -1.6666665, 10, 10, -10, 10, -10, -1.6666665)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1674343361]
+texture_filter = 1
+scale = Vector2(1.3541666, 1.3541666)
+texture = ExtResource("1_ff7sh")
+region_enabled = true
+region_rect = Rect2(33, 0, 14, 24)
