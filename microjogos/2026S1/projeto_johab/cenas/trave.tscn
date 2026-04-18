@@ -7,3 +7,5 @@
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1375552436]
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=2096993392]
+position = Vector2(948.0001, 533)
+scale = Vector2(60.250008, 34.312504)

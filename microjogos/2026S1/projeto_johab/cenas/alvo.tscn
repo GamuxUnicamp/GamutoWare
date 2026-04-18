@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://dw0euva50oa0i"]
 
+[ext_resource type="Texture2D" uid="uid://6gpmsuq4vjqq" path="res://microjogos/2026S1/projeto_johab/recursos/imagens/alvo.png" id="1_fd6tn"]
+
 [node name="Alvo" type="Node2D" unique_id=1670427971]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2029599919]
+texture = ExtResource("1_fd6tn")

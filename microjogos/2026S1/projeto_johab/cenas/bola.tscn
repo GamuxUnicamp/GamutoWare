@@ -1,3 +1,23 @@
 [gd_scene format=3 uid="uid://doqjhnobx7235"]
 
+[ext_resource type="Texture2D" uid="uid://bxls7wlyiftkf" path="res://microjogos/2026S1/projeto_johab/recursos/imagens/bola.png" id="1_ur1o4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kwl6p"]
+radius = 6.0
+
 [node name="Bola" type="Node2D" unique_id=1272860]
+position = Vector2(2, -1)
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=175878437]
+position = Vector2(-2.0000005, 1.000001)
+scale = Vector2(0.050999995, 0.0463)
+texture = ExtResource("1_ur1o4")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1095278747]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1878349157]
+position = Vector2(-2, 1)
+shape = SubResource("CircleShape2D_kwl6p")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=361388530]
+position = Vector2(-2, 1)

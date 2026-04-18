@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://co0fpdxxn54h6"
-path="res://.godot/imported/1234.png-6d983df9e271b92b83751a33c50c58c3.ctex"
+uid="uid://bns78pgq1bf8m"
+path="res://.godot/imported/cenario.jpg-96e57c34ed8ae3f3520432aececf1c87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://microjogos/2025S1/project_so_ze/recursos/imagens/PROPS/1234.png"
-dest_files=["res://.godot/imported/1234.png-6d983df9e271b92b83751a33c50c58c3.ctex"]
+source_file="res://microjogos/2026S1/projeto_johab/recursos/imagens/cenario.jpg"
+dest_files=["res://.godot/imported/cenario.jpg-96e57c34ed8ae3f3520432aececf1c87.ctex"]
 
 [params]
 

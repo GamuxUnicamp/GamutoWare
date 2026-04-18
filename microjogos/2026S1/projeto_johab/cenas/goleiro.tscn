@@ -1,3 +1,17 @@
 [gd_scene format=3 uid="uid://bectfxpcrmbii"]
 
+[ext_resource type="Texture2D" uid="uid://blmwnibbn8tak" path="res://microjogos/2026S1/projeto_johab/recursos/imagens/goleiro.png" id="1_ih158"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wxmaj"]
+size = Vector2(195, 253.5)
+
 [node name="Goleiro" type="Node2D" unique_id=928718516]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=99391029]
+texture = ExtResource("1_ih158")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1694818141]
+position = Vector2(0.5, 6.25)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1957258588]
+shape = SubResource("RectangleShape2D_wxmaj")

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cgdkaripo0h0m"]
+
+[ext_resource type="Texture2D" uid="uid://bns78pgq1bf8m" path="res://microjogos/2026S1/projeto_johab/recursos/imagens/cenario.jpg" id="1_1hx4r"]
+[ext_resource type="Script" uid="uid://cqpce63iylm3k" path="res://microjogos/2026S1/projeto_johab/cenas/scripts/main.gd" id="1_5y3v7"]
+[ext_resource type="PackedScene" uid="uid://doqjhnobx7235" path="res://microjogos/2026S1/projeto_johab/cenas/bola.tscn" id="2_5y3v7"]
+[ext_resource type="PackedScene" uid="uid://dw0euva50oa0i" path="res://microjogos/2026S1/projeto_johab/cenas/alvo.tscn" id="3_rgul2"]
+[ext_resource type="PackedScene" uid="uid://bectfxpcrmbii" path="res://microjogos/2026S1/projeto_johab/cenas/goleiro.tscn" id="4_d0ssx"]
+
+[node name="Main" type="Node2D" unique_id=1597121372]
+texture_filter = 1
+script = ExtResource("1_5y3v7")
+
+[node name="cenario" type="Sprite2D" parent="." unique_id=1049670245]
+texture_filter = 1
+position = Vector2(959.87506, 538.12506)
+scale = Vector2(3.7686641, 3.1733043)
+texture = ExtResource("1_1hx4r")
+
+[node name="Bola" parent="." unique_id=1272860 instance=ExtResource("2_5y3v7")]
+position = Vector2(957, 766)
+
+[node name="Alvo" parent="." unique_id=1670427971 instance=ExtResource("3_rgul2")]
+position = Vector2(438, 371)
+
+[node name="Goleiro" parent="." unique_id=928718516 instance=ExtResource("4_d0ssx")]
+texture_filter = 2
+position = Vector2(948, 523)
