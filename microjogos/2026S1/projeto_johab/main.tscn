@@ -17,11 +17,14 @@ scale = Vector2(3.7686641, 3.1733043)
 texture = ExtResource("1_1hx4r")
 
 [node name="Bola" parent="." unique_id=1272860 instance=ExtResource("2_5y3v7")]
-position = Vector2(957, 766)
+position = Vector2(989, 1001)
+scale = Vector2(12, 12)
 
 [node name="Alvo" parent="." unique_id=1670427971 instance=ExtResource("3_rgul2")]
-position = Vector2(438, 371)
+position = Vector2(367.00006, 308.00006)
+scale = Vector2(0.4, 0.4)
 
 [node name="Goleiro" parent="." unique_id=928718516 instance=ExtResource("4_d0ssx")]
 texture_filter = 2
-position = Vector2(948, 523)
+position = Vector2(954, 487)
+scale = Vector2(1.5, 1.5)
