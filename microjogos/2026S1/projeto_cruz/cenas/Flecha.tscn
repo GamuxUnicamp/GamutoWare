@@ -1,3 +1,9 @@
 [gd_scene format=3 uid="uid://bymono0272xw"]
 
 [node name="Flecha" type="Node2D" unique_id=1085362720]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1256441109]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=729203004]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=2062128203]

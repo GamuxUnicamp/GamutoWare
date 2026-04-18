@@ -1,3 +1,13 @@
 [gd_scene format=3 uid="uid://pwpddfupbrb0"]
 
+[ext_resource type="Texture2D" uid="uid://botoamlosc56j" path="res://microjogos/2026S1/projeto_cruz/recursos/imagens/esqueleto_vectry-removebg-preview.png" id="1_4d0u0"]
+
 [node name="Esqueleto" type="Node2D" unique_id=1659005111]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=600984092]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1459437161]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1313187036]
+position = Vector2(334, 42)
+texture = ExtResource("1_4d0u0")
