@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://dajt08c77afje" path="res://microjogos/2026S1/projeto_cruz/cenas/GamutoKnight.tscn" id="2_thase"]
 [ext_resource type="PackedScene" uid="uid://c3ct4eifuwnj0" path="res://microjogos/2026S1/projeto_cruz/cenas/Camera.tscn" id="3_uvs1o"]
 [ext_resource type="PackedScene" uid="uid://pwpddfupbrb0" path="res://microjogos/2026S1/projeto_cruz/cenas/Esqueleto.tscn" id="4_thase"]
+[ext_resource type="PackedScene" uid="uid://bymono0272xw" path="res://microjogos/2026S1/projeto_cruz/cenas/Flecha.tscn" id="5_uvs1o"]
+[ext_resource type="PackedScene" uid="uid://tj4a3qta71if" path="res://microjogos/2026S1/projeto_cruz/cenas/Chão.tscn" id="6_jx8q8"]
 
 [node name="Main" type="Node2D" unique_id=1597121372]
 texture_filter = 1
@@ -14,11 +16,21 @@ position = Vector2(408, 232)
 scale = Vector2(0.96, 1.015)
 
 [node name="GamutoKnight" parent="." unique_id=522217128 instance=ExtResource("2_thase")]
-position = Vector2(379, 280)
+z_index = 1
+position = Vector2(388, 286)
 scale = Vector2(1.5, 1.5)
 
 [node name="Camera" parent="." unique_id=219678133 instance=ExtResource("3_uvs1o")]
+position = Vector2(420, 220)
 
 [node name="Esqueleto" parent="." unique_id=1659005111 instance=ExtResource("4_thase")]
-position = Vector2(317, 254)
+z_index = 1
+position = Vector2(1079.0001, 328)
 scale = Vector2(1.6, 1.6)
+
+[node name="Flecha" parent="." unique_id=1085362720 instance=ExtResource("5_uvs1o")]
+position = Vector2(-140, 192)
+
+[node name="Chão" parent="." unique_id=1421735648 instance=ExtResource("6_jx8q8")]
+position = Vector2(408, 454)
+scale = Vector2(12.85, 12.85)
