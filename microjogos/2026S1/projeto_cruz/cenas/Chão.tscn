@@ -8,12 +8,13 @@ size = Vector2(150, 14)
 
 [node name="Chão" type="Node2D" unique_id=1421735648]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=23966010]
-texture = ExtResource("2_acgfr")
-
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1952874738]
 script = ExtResource("1_sroeu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1200993247]
 position = Vector2(0, 13)
 shape = SubResource("RectangleShape2D_dyxy3")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=23966010]
+z_index = -1
+texture = ExtResource("2_acgfr")

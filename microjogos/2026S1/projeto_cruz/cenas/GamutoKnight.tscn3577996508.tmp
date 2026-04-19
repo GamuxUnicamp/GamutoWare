@@ -17,7 +17,11 @@ size = Vector2(130, 49)
 [node name="GamutoKnight" type="CharacterBody2D" parent="." unique_id=1702339089]
 script = ExtResource("1_xdoox")
 
-[node name="Area_Knight" type="Area2D" parent="GamutoKnight" unique_id=1615445652 groups=["Player"]]
+[node name="sprite_normal" type="Sprite2D" parent="GamutoKnight" unique_id=1933053021]
+scale = Vector2(-0.71999955, 0.7200006)
+texture = ExtResource("1_0013y")
+
+[node name="Area_Knight" type="Area2D" parent="GamutoKnight" unique_id=1615445652]
 
 [node name="hitbox_normal" type="CollisionShape2D" parent="GamutoKnight/Area_Knight" unique_id=1334820613]
 position = Vector2(-6.5, 6.5)
@@ -28,20 +32,14 @@ visible = false
 position = Vector2(-7, 49.5)
 shape = SubResource("RectangleShape2D_lwphy")
 
-[node name="sprite_abaixado" type="Sprite2D" parent="GamutoKnight/Area_Knight" unique_id=1658864606]
-visible = false
-position = Vector2(0, 45)
-rotation = 3.1415927
-scale = Vector2(0.72, -0.52)
-texture = ExtResource("1_0013y")
-
-[node name="sprite_normal" type="Sprite2D" parent="GamutoKnight/Area_Knight" unique_id=1933053021]
-rotation = 3.1415927
-scale = Vector2(0.71999955, -0.7200006)
-texture = ExtResource("1_0013y")
-
 [node name="hitbox_chão" type="CollisionShape2D" parent="GamutoKnight" unique_id=711491345]
 position = Vector2(-6, 135.5)
 shape = SubResource("RectangleShape2D_xdoox")
+
+[node name="sprite_abaixado" type="Sprite2D" parent="GamutoKnight" unique_id=1658864606]
+visible = false
+position = Vector2(0, 45)
+scale = Vector2(-0.72, 0.52)
+texture = ExtResource("1_0013y")
 
 [connection signal="area_entered" from="GamutoKnight/Area_Knight" to="GamutoKnight" method="_on_area_2d_area_entered"]
