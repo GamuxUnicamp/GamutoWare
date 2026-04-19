@@ -5,10 +5,14 @@
 
 [resource]
 script = ExtResource("1_ra0m3")
-title_pt = &"TÍTULO DO JOGO"
-title_en = &"GAME TITLE"
-credits_pt = "Créditos do jogo"
-credits_en = "Game credits"
+title_pt = &"NORT"
+title_en = &"NORT"
+credits_pt = "https://ansimuz.itch.io/explosion-animations-pack?download#google_vignette - animação da explosão dos personagens
+
+https://opengameart.org/content/explosion-0 - sfx explosão"
+credits_en = "https://ansimuz.itch.io/explosion-animations-pack?download#google_vignette - characters explosion animation
+
+https://opengameart.org/content/explosion-0 - explosion sfx"
 start_message_pt = &"NÃO EXPLODA!"
 start_message_en = &"DON\'T BLOW UP!!"
 main_scene = ExtResource("1_bnnsr")
