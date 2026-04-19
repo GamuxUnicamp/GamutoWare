@@ -29,8 +29,9 @@ func _process(_delta):
 		var foto = get_node(passaro).has_overlapping_areas()
 		var foco = $Camera/Slider.has_overlapping_areas()
 		if foto == true and foco == true:
+			$SomCamera.play(0.75)
 			$Camera/Fade.play("fade")	
-			Minigames.register_win(self)
+			Minigames.register_win(self) 
 			
 # --------------------------------------------------------------------------------------------------
 # SUAS FUNÇÕES

@@ -21,6 +21,7 @@ func _process(delta: float) -> void:
 		position += velocidade * delta * direcao *indice
 	elif direcao.x < 0 and position.x < -210:
 		direcao.x = 1
+
 		
 
 		

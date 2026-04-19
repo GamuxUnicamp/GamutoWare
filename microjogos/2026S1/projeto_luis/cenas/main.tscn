@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://b0uteb8qpbcw6" path="res://microjogos/2026S1/projeto_luis/recursos/imagens/Passaro1.png" id="5_e8ny7"]
 [ext_resource type="Texture2D" uid="uid://yxddr8l0sg4a" path="res://microjogos/2026S1/projeto_luis/recursos/imagens/grid_camera.svg" id="6_l2o4q"]
 [ext_resource type="Script" uid="uid://cn3co3ac0jvsu" path="res://microjogos/2026S1/projeto_luis/cenas/scripts/slider.gd" id="7_l2o4q"]
+[ext_resource type="AudioStream" uid="uid://u3sm8uqsollt" path="res://microjogos/2026S1/projeto_luis/recursos/sons/camera.wav" id="10_q1f63"]
+[ext_resource type="AudioStream" uid="uid://b1bydj1ucevqp" path="res://microjogos/2026S1/projeto_luis/recursos/sons/passaros.wav" id="11_34tag"]
 
 [sub_resource type="Animation" id="Animation_r44ko"]
 length = 0.001
@@ -220,3 +222,11 @@ shape = SubResource("RectangleShape2D_m06cb")
 offset_left = -8.0
 offset_top = -32.0
 offset_right = 8.0
+
+[node name="SomCamera" type="AudioStreamPlayer" parent="." unique_id=858568680]
+stream = ExtResource("10_q1f63")
+volume_db = 24.0
+
+[node name="SomPassaros" type="AudioStreamPlayer" parent="." unique_id=183993759]
+stream = ExtResource("11_34tag")
+autoplay = true
