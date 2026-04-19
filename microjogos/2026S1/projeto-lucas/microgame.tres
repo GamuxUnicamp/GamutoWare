@@ -9,6 +9,6 @@ title_pt = &"TÍTULO DO JOGO"
 title_en = &"GAME TITLE"
 credits_pt = "Créditos do jogo"
 credits_en = "Game credits"
-start_message_pt = &"FAÇA ALGO!"
+start_message_pt = &"POUSE A NAVE!!!"
 start_message_en = &"DO SOMETHING!"
 main_scene = ExtResource("1_nt0gi")
