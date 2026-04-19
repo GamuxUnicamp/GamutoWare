@@ -1,4 +1,82 @@
 [gd_scene format=3 uid="uid://csoob0qvet75i"]
 
+[ext_resource type="Texture2D" uid="uid://brlktxhcbl8n" path="res://microjogos/2026S1/projeto-luppi/recursos/imagens/fundo.png" id="1_rgy5t"]
+[ext_resource type="Texture2D" uid="uid://doyh66c3e0p43" path="res://microjogos/2026S1/projeto-luppi/recursos/imagens/dinheiro movendo.png" id="2_b6vnn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lkudt"]
+size = Vector2(173, 382)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_12wx1"]
+size = Vector2(190.5, 53)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tc0jp"]
+load_path = "res://.godot/imported/ra movendo.png-ddcf8d6c6f59eed7c67ae4d9a6442979.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v0ljy"]
+size = Vector2(170, 248)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_snmlw"]
+size = Vector2(176, 126)
+
 [node name="Main" type="Node2D" unique_id=1597121372]
 texture_filter = 1
+
+[node name="Bota a grana aki" type="RichTextLabel" parent="." unique_id=1991554251]
+offset_left = 400.0
+offset_top = 356.0
+offset_right = 553.0
+offset_bottom = 387.0
+text = "Bota a grana aki"
+
+[node name="Fundo" type="Sprite2D" parent="." unique_id=832741019]
+scale = Vector2(0.46857393, 0.46857393)
+texture = ExtResource("1_rgy5t")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="dinheiro movendo" type="CharacterBody2D" parent="." unique_id=1301446887 groups=["dinheiro"]]
+position = Vector2(614, 568)
+metadata/_edit_group_ = true
+
+[node name="DinheiroMovendo" type="Sprite2D" parent="dinheiro movendo" unique_id=403335557]
+position = Vector2(137, 344.99994)
+scale = Vector2(0.544, 0.544)
+texture = ExtResource("2_b6vnn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dinheiro movendo" unique_id=136559137]
+position = Vector2(76.5, 140)
+shape = SubResource("RectangleShape2D_lkudt")
+
+[node name="Leitor de cédula" type="Area2D" parent="." unique_id=407327153]
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Leitor de cédula" unique_id=219737998]
+position = Vector2(723.25, 282.5)
+shape = SubResource("RectangleShape2D_12wx1")
+
+[node name="Segure espaço" type="RichTextLabel" parent="." unique_id=250174954]
+offset_left = 1204.0
+offset_top = 265.0
+offset_right = 1357.0
+offset_bottom = 331.0
+text = "Segure espaço"
+
+[node name="cartão movendo" type="CharacterBody2D" parent="." unique_id=1249410799]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="cartão movendo" unique_id=485995090]
+position = Vector2(1363.175, 1132.725)
+scale = Vector2(0.55, 0.55)
+texture = SubResource("CompressedTexture2D_tc0jp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cartão movendo" unique_id=705794628]
+position = Vector2(1281.175, 916.725)
+shape = SubResource("RectangleShape2D_v0ljy")
+
+[node name="Leitor de cartão" type="Area2D" parent="." unique_id=1733744506]
+position = Vector2(1281, 648)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Leitor de cartão" unique_id=66139529]
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_snmlw")
