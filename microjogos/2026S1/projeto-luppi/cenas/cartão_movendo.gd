@@ -22,9 +22,9 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_leitor_de_cartão_body_entered(body: Node2D) -> void:
-	$Sprite2D.texture = sucesso_RA
-	print ("entrou")
-	$Sucesso.play()
+	if body.is_in_group("ra"):
+		$Sprite2D.texture = sucesso_RA
+		$Sucesso.play()
 
 
 func _on_leitor_de_cartão_body_shape_exited(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:

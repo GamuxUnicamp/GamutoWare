@@ -24,5 +24,6 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 func _on_leitor_de_cédula_body_entered(body: Node2D) -> void:
-	$DinheiroMovendo.texture = sucesso_dinheiro
-	$Sucesso.play()
+	if body.is_in_group("dinheiro"):
+		$DinheiroMovendo.texture = sucesso_dinheiro
+		$Sucesso.play()

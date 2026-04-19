@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://3ay7mts8foal" path="res://microjogos/2026S1/projeto-luppi/cenas/leitor_de_cédula.gd" id="5_tc0jp"]
 [ext_resource type="AudioStream" uid="uid://b24ihg062qnj7" path="res://microjogos/2026S1/projeto-luppi/recursos/sons/musica cortada.mp3" id="7_v0ljy"]
 [ext_resource type="AudioStream" uid="uid://c3686t8j6kk3q" path="res://microjogos/2026S1/projeto-luppi/recursos/sons/sucesso.mp3" id="8_snmlw"]
+[ext_resource type="Texture2D" uid="uid://c7dp844c66406" path="res://microjogos/2026S1/projeto-luppi/recursos/imagens/vitoria porra.png" id="9_ajtg6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lkudt"]
 size = Vector2(173, 382)
@@ -62,7 +63,7 @@ metadata/_edit_group_ = true
 position = Vector2(723.25, 282.5)
 shape = SubResource("RectangleShape2D_12wx1")
 
-[node name="cartão movendo" type="CharacterBody2D" parent="." unique_id=1249410799]
+[node name="cartão movendo" type="CharacterBody2D" parent="." unique_id=1249410799 groups=["ra"]]
 position = Vector2(2, -54)
 script = ExtResource("4_tc0jp")
 metadata/_edit_group_ = true
@@ -110,6 +111,12 @@ shape = SubResource("SegmentShape2D_lkudt")
 [node name="MusicaCortada" type="AudioStreamPlayer" parent="." unique_id=1553159480]
 stream = ExtResource("7_v0ljy")
 autoplay = true
+
+[node name="VitoriaPorra" type="Sprite2D" parent="." unique_id=1516154688]
+visible = false
+position = Vector2(1019, 539.00006)
+scale = Vector2(0.4035829, 0.40358293)
+texture = ExtResource("9_ajtg6")
 
 [connection signal="body_entered" from="Leitor de cédula" to="dinheiro movendo" method="_on_leitor_de_cédula_body_entered"]
 [connection signal="body_entered" from="Leitor de cartão" to="cartão movendo" method="_on_leitor_de_cartão_body_entered"]
