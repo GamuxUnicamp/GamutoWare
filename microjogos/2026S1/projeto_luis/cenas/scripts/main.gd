@@ -1,23 +1,44 @@
 extends Node2D
+
+var idx = randi_range(0,4)
+
+var passaros = ["Passaros/Passaro1",
+				"Passaros/Passaro2",
+				"Passaros/Passaro3",
+				"Passaros/Passaro4",
+				"Passaros/Passaro5"]
+				
+var paths = ["res://microjogos/2026S1/projeto_luis/recursos/imagens/Passaro1.png",
+			 "res://microjogos/2026S1/projeto_luis/recursos/imagens/Passaro2.png",
+			 "res://microjogos/2026S1/projeto_luis/recursos/imagens/Passaro3.png",
+			 "res://microjogos/2026S1/projeto_luis/recursos/imagens/Passaro4.png",
+			 "res://microjogos/2026S1/projeto_luis/recursos/imagens/Passaro5.png"]
+
+var passaro = passaros[idx]
+var path = paths[idx]
+
+var partida = true
+				
 # --------------------------------------------------------------------------------------------------
 # FUNÇÕES PADRÃO
 # --------------------------------------------------------------------------------------------------
-
-# Esta função é chamada assim que esta cena é instanciada, ou seja, assim que seu minigame inicia
 func _ready():
-	pass
+	$Guia/Sombra.texture= load(path)
 
-# Esta função é chamada uma vez por frame e é otimizada para cálculos relacionados a física, como
-# a movimentação de um personagem. O parâmetro delta indica a quantidade de tempo que passou desde
-# a última chamada desta função. O comando pass não faz nada
-func _physics_process(delta):
-	pass
-
-# Esta função é chamada uma vez por frame e é otimizada para cálculos relacionados a renderização, 
-# como a movimentação de um personagem. O parâmetro delta indica a quantidade de tempo que passou 
-# desde a última chamada desta função. O comando pass não faz nada
-func _process(delta):
-	pass
+func _process(_delta):
+	
+	if Input.is_action_pressed("acao") and (partida == true):
+		var foto = get_node(passaro).has_overlapping_areas()
+		var foco = $Camera/Slider.has_overlapping_areas()
+		if foto == true and foco == true:
+			$Camera/Fade.play("fade")	
+			Minigames.register_win(self)
+		else:
+			partida = false
+			
+	
+		
+		
 
 # --------------------------------------------------------------------------------------------------
 # SUAS FUNÇÕES

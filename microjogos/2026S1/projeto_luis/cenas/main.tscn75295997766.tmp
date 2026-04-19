@@ -5,17 +5,17 @@
 [ext_resource type="Texture2D" uid="uid://q2vw2hk8b1ra" path="res://microjogos/2026S1/projeto_luis/recursos/imagens/FundoPassaros.png" id="2_e7oaw"]
 [ext_resource type="FontFile" uid="uid://bgxvie8ana3ir" path="res://microjogos/2026S1/projeto_luis/recursos/fontes/The Wildeast.ttf" id="3_m06cb"]
 [ext_resource type="Script" uid="uid://q21jldxbtpyj" path="res://microjogos/2026S1/projeto_luis/cenas/scripts/camera.gd" id="3_n22cp"]
-[ext_resource type="Texture2D" uid="uid://yxddr8l0sg4a" path="res://microjogos/2026S1/projeto_luis/recursos/imagens/grid_camera.svg" id="6_l2o4q"]
+[ext_resource type="Texture2D" uid="uid://brvnyghsanw6i" path="res://microjogos/2026S1/projeto_luis/recursos/imagens/grid_camera.png" id="5_e7oaw"]
 [ext_resource type="Script" uid="uid://cn3co3ac0jvsu" path="res://microjogos/2026S1/projeto_luis/cenas/scripts/slider.gd" id="7_l2o4q"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ht0mv"]
 radius = 159.05566
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e7oaw"]
-size = Vector2(105, 72)
+size = Vector2(112, 80)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e8ny7"]
-size = Vector2(130, 17)
+size = Vector2(160, 16)
 
 [sub_resource type="Animation" id="Animation_ht0mv"]
 length = 0.001
@@ -55,7 +55,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m06cb"]
-size = Vector2(15, 50)
+size = Vector2(15, 64)
 
 [node name="Main" type="Node2D" unique_id=1597121372]
 texture_filter = 1
@@ -138,40 +138,42 @@ shape = SubResource("CircleShape2D_ht0mv")
 script = ExtResource("3_n22cp")
 
 [node name="Hitbox" type="CollisionShape2D" parent="Camera" unique_id=252082103]
-position = Vector2(-0.5, 15)
+position = Vector2(0, 24)
 shape = SubResource("RectangleShape2D_e7oaw")
 
 [node name="Hitarea" type="CollisionShape2D" parent="Camera" unique_id=1102457591]
 light_mask = 2
 visibility_layer = 2
-position = Vector2(0, -148.5)
+position = Vector2(0, -168)
 shape = SubResource("RectangleShape2D_e8ny7")
 
 [node name="Grid" type="Sprite2D" parent="Camera" unique_id=500028777]
 position = Vector2(7.6293945e-06, 1.9073486e-06)
-texture = ExtResource("6_l2o4q")
+scale = Vector2(1.1962618, 1.1962616)
+texture = ExtResource("5_e7oaw")
 
 [node name="Fade" type="AnimationPlayer" parent="Camera" unique_id=1938551132]
 libraries/ = SubResource("AnimationLibrary_m06cb")
 
 [node name="Flash" type="ColorRect" parent="Camera" unique_id=2076576455]
-offset_left = -209.0
-offset_top = -122.0
-offset_right = 209.0
-offset_bottom = 152.0
+offset_left = -232.0
+offset_top = -128.0
+offset_right = 232.0
+offset_bottom = 176.0
 color = Color(1, 1, 1, 0)
 
 [node name="Slider" type="Area2D" parent="Camera" unique_id=1112283984]
+position = Vector2(0, -208)
 script = ExtResource("7_l2o4q")
-metadata/_edit_group_ = true
 
 [node name="Hit_slider" type="CollisionShape2D" parent="Camera/Slider" unique_id=55671718]
 light_mask = 2
 visibility_layer = 2
-position = Vector2(0, 9)
+position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_m06cb")
 
 [node name="Seta" type="ColorRect" parent="Camera/Slider" unique_id=1726714805]
 offset_left = -8.0
-offset_top = -32.0
+offset_top = -16.0
 offset_right = 8.0
+offset_bottom = 16.0
