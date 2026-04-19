@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://l3ulejco47xf"]
 
 [ext_resource type="Texture2D" uid="uid://cerrkuc3s83ai" path="res://microjogos/2026S1/projeto_cruz/recursos/imagens/Spirte_slash.png" id="1_dtdc8"]
-[ext_resource type="Script" uid="uid://e5b01ax74kfy" path="res://microjogos/2026S1/projeto_cruz/cenas/area_espada.gd" id="2_54q0f"]
+[ext_resource type="Script" uid="uid://e5b01ax74kfy" path="res://microjogos/2026S1/projeto_cruz/cenas/scripts/area_espada.gd" id="2_54q0f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xgrfn"]
 size = Vector2(168, 438)

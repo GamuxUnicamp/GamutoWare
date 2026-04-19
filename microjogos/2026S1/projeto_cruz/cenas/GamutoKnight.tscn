@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dajt08c77afje"]
 
-[ext_resource type="Texture2D" uid="uid://cd2gwsfmvyrdq" path="res://microjogos/2026S1/projeto_cruz/recursos/imagens/Cavaleiro_Pinterest-removebg-preview.png" id="1_0013y"]
-[ext_resource type="Script" uid="uid://cobax3asc0fj5" path="res://microjogos/2026S1/projeto_cruz/cenas/GamutoKnight.gd" id="1_xdoox"]
+[ext_resource type="Script" uid="uid://cobax3asc0fj5" path="res://microjogos/2026S1/projeto_cruz/cenas/scripts/GamutoKnight.gd" id="1_xdoox"]
+[ext_resource type="Texture2D" uid="uid://dgphbgqitdhkf" path="res://microjogos/2026S1/projeto_cruz/recursos/imagens/Sprite_Cavaleiro.png" id="2_xdoox"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5kprm"]
 size = Vector2(131, 307)
@@ -12,7 +12,7 @@ size = Vector2(132, 219)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xdoox"]
 size = Vector2(130, 49)
 
-[node name="GamutoKnight" type="Node2D" unique_id=522217128]
+[node name="GamutoKnight" type="Node2D" unique_id=522217128 groups=["Player"]]
 
 [node name="GamutoKnight" type="CharacterBody2D" parent="." unique_id=1702339089]
 script = ExtResource("1_xdoox")
@@ -33,12 +33,13 @@ visible = false
 position = Vector2(0, 45)
 rotation = 3.1415927
 scale = Vector2(0.72, -0.52)
-texture = ExtResource("1_0013y")
+texture = ExtResource("2_xdoox")
 
 [node name="sprite_normal" type="Sprite2D" parent="GamutoKnight/Area_Knight" unique_id=1933053021]
+position = Vector2(-0.99999994, 1)
 rotation = 3.1415927
 scale = Vector2(0.71999955, -0.7200006)
-texture = ExtResource("1_0013y")
+texture = ExtResource("2_xdoox")
 
 [node name="hitbox_chão" type="CollisionShape2D" parent="GamutoKnight" unique_id=711491345]
 position = Vector2(-6, 135.5)

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://pwpddfupbrb0"]
 
-[ext_resource type="Texture2D" uid="uid://botoamlosc56j" path="res://microjogos/2026S1/projeto_cruz/recursos/imagens/esqueleto_vectry-removebg-preview.png" id="1_4d0u0"]
-[ext_resource type="Script" uid="uid://5p5g4qq15q1t" path="res://microjogos/2026S1/projeto_cruz/cenas/esqueleto.gd" id="2_s2n8v"]
+[ext_resource type="Texture2D" uid="uid://cdx1w3kydgoya" path="res://microjogos/2026S1/projeto_cruz/recursos/imagens/Sprite_esqueleto.png" id="2_20apj"]
+[ext_resource type="Script" uid="uid://5p5g4qq15q1t" path="res://microjogos/2026S1/projeto_cruz/cenas/scripts/esqueleto.gd" id="2_s2n8v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s2n8v"]
 size = Vector2(125, 356)
@@ -21,6 +21,6 @@ shape = SubResource("RectangleShape2D_s2n8v")
 z_index = 1
 position = Vector2(0, 1)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("1_4d0u0")
+texture = ExtResource("2_20apj")
 
 [connection signal="area_shape_entered" from="Esqueleto/Area_Esqueleto" to="Esqueleto" method="_on_area_esqueleto_area_shape_entered"]

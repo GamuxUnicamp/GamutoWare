@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://d0wc4h2oe5py4"]
-
-[node name="Tutorial" type="Node2D" unique_id=1994369230]
-
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=698784115]
-offset_right = 40.0
-offset_bottom = 40.0

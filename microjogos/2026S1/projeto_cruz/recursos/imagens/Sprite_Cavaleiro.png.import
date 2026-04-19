@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmy8uc6p0h2w7"
-path="res://.godot/imported/capa.png-bce26c1ff4618bc376e04751b94910d5.ctex"
+uid="uid://dgphbgqitdhkf"
+path="res://.godot/imported/Sprite_Cavaleiro.png-07d444762b2902b6d0d9fe8762128182.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://microjogos/2026S1/projeto_cruz/capa.png"
-dest_files=["res://.godot/imported/capa.png-bce26c1ff4618bc376e04751b94910d5.ctex"]
+source_file="res://microjogos/2026S1/projeto_cruz/recursos/imagens/Sprite_Cavaleiro.png"
+dest_files=["res://.godot/imported/Sprite_Cavaleiro.png-07d444762b2902b6d0d9fe8762128182.ctex"]
 
 [params]
 

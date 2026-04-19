@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmy8uc6p0h2w7"
-path="res://.godot/imported/capa.png-bce26c1ff4618bc376e04751b94910d5.ctex"
+uid="uid://cdx1w3kydgoya"
+path="res://.godot/imported/Sprite_esqueleto.png-2d31f9d827d8eeb2931145a67af1ce9e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://microjogos/2026S1/projeto_cruz/capa.png"
-dest_files=["res://.godot/imported/capa.png-bce26c1ff4618bc376e04751b94910d5.ctex"]
+source_file="res://microjogos/2026S1/projeto_cruz/recursos/imagens/Sprite_esqueleto.png"
+dest_files=["res://.godot/imported/Sprite_esqueleto.png-2d31f9d827d8eeb2931145a67af1ce9e.ctex"]
 
 [params]
 

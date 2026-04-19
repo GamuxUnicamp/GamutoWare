@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const GRAVITY = 1200.0
-const JUMP_VELOCITY = 600.0
+const GRAVITY = 1500.0
+const JUMP_VELOCITY = 800.0
 
 const CENA_ESPADA = preload("res://microjogos/2026S1/projeto_cruz/cenas/Espada.tscn")
 
@@ -23,15 +23,12 @@ func atacar():
 	elif sprite_abaixado and sprite_abaixado.visible:
 		direcao = -1 if sprite_abaixado.flip_h else 1
 
-	# 3. Posicionamento
-	# Se estiver abaixado, talvez você queira que a espada saia mais de baixo
 	var altura_ataque = 0
 	if sprite_abaixado.visible:
-		altura_ataque = 10 # Ajuste esse valor conforme seu sprite
+		altura_ataque = 10
 		
 	nova_espada.position = Vector2(200 * direcao, altura_ataque) 
 	
-	# 4. Adiciona a espada
 	add_child(nova_espada)
 
 func abaixar(bool):
@@ -58,4 +55,7 @@ func _physics_process(delta):
 
 func _on_area_2d_area_entered(area: Area2D):
 	if area.is_in_group("Esqueletos") or area.is_in_group("Flechas"):
+		Minigames.register_lose(self)
 		get_parent().queue_free()
+		if area.is_in_group("Flechas"):
+			area.get_parent().queue_free()
