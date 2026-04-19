@@ -5,4 +5,6 @@
 [node name="Alvo" type="Node2D" unique_id=1670427971]
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=2029599919]
+position = Vector2(0.9999981, -3.9999962)
+scale = Vector2(0.49599996, 0.47199997)
 texture = ExtResource("1_fd6tn")

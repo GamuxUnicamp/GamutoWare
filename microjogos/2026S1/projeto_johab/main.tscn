@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://doqjhnobx7235" path="res://microjogos/2026S1/projeto_johab/cenas/bola.tscn" id="2_5y3v7"]
 [ext_resource type="PackedScene" uid="uid://dw0euva50oa0i" path="res://microjogos/2026S1/projeto_johab/cenas/alvo.tscn" id="3_rgul2"]
 [ext_resource type="PackedScene" uid="uid://bectfxpcrmbii" path="res://microjogos/2026S1/projeto_johab/cenas/goleiro.tscn" id="4_d0ssx"]
+[ext_resource type="Script" uid="uid://dakhf3ko8a77" path="res://microjogos/2026S1/projeto_johab/cenas/alvo.gd" id="5_rgul2"]
 
 [node name="Main" type="Node2D" unique_id=1597121372]
 texture_filter = 1
@@ -17,12 +18,13 @@ scale = Vector2(3.7686641, 3.1733043)
 texture = ExtResource("1_1hx4r")
 
 [node name="Bola" parent="." unique_id=1272860 instance=ExtResource("2_5y3v7")]
-position = Vector2(989, 1001)
-scale = Vector2(12, 12)
+position = Vector2(974, 1016)
+scale = Vector2(6, 6)
 
 [node name="Alvo" parent="." unique_id=1670427971 instance=ExtResource("3_rgul2")]
-position = Vector2(367.00006, 308.00006)
-scale = Vector2(0.4, 0.4)
+top_level = true
+position = Vector2(949, 490)
+script = ExtResource("5_rgul2")
 
 [node name="Goleiro" parent="." unique_id=928718516 instance=ExtResource("4_d0ssx")]
 texture_filter = 2
