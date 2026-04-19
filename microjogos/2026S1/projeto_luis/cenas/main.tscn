@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dqmbh3ms1eie0" path="res://microjogos/2026S1/projeto_luis/cenas/scripts/main.gd" id="1_e7oaw"]
 [ext_resource type="Texture2D" uid="uid://c06ikxx8ik28w" path="res://microjogos/2026S1/projeto_luis/recursos/imagens/FundoPassaros1.png" id="2_e8ny7"]
-[ext_resource type="Script" uid="uid://bs3y5aupumo5o" path="res://microjogos/2026S1/projeto_luis/cenas/fundo.gd" id="2_r44ko"]
+[ext_resource type="Script" uid="uid://bs3y5aupumo5o" path="res://microjogos/2026S1/projeto_luis/cenas/scripts/fundo.gd" id="2_r44ko"]
 [ext_resource type="FontFile" uid="uid://bgxvie8ana3ir" path="res://microjogos/2026S1/projeto_luis/recursos/fontes/The Wildeast.ttf" id="3_m06cb"]
 [ext_resource type="Script" uid="uid://q21jldxbtpyj" path="res://microjogos/2026S1/projeto_luis/cenas/scripts/camera.gd" id="3_n22cp"]
 [ext_resource type="Texture2D" uid="uid://ek3gsqhvs0x3" path="res://microjogos/2026S1/projeto_luis/recursos/imagens/FundoPassaros2png.png" id="3_r44ko"]
