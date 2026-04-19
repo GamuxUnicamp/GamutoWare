@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brlktxhcbl8n"
-path="res://.godot/imported/fundo.png-783a0b567f6a504c4cfd8a3ed23fd790.ctex"
+uid="uid://dbgfrnbo0wewa"
+path="res://.godot/imported/fundo com instrução.png-5a87cb1365b057736d0eab46fa75e909.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://microjogos/2026S1/projeto-luppi/recursos/imagens/fundo.png"
-dest_files=["res://.godot/imported/fundo.png-783a0b567f6a504c4cfd8a3ed23fd790.ctex"]
+source_file="res://microjogos/2026S1/projeto-luppi/recursos/imagens/fundo com instrução.png"
+dest_files=["res://.godot/imported/fundo com instrução.png-5a87cb1365b057736d0eab46fa75e909.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cl1n6d0l7thhi"
-path="res://.godot/imported/Certinho.png-4132873341cda42c02a0241e00888fc0.ctex"
+uid="uid://dgoeexnqlnk4g"
+path="res://.godot/imported/sucesso RA(1).png-639d5809d3176b296938ca7cd30ee21f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://microjogos/2026S1/projeto-luppi/recursos/imagens/Certinho.png"
-dest_files=["res://.godot/imported/Certinho.png-4132873341cda42c02a0241e00888fc0.ctex"]
+source_file="res://microjogos/2026S1/projeto-luppi/recursos/imagens/sucesso RA(1).png"
+dest_files=["res://.godot/imported/sucesso RA(1).png-639d5809d3176b296938ca7cd30ee21f.ctex"]
 
 [params]
 
