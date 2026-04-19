@@ -1,4 +1,11 @@
 [gd_scene format=3 uid="uid://bn7ceuyyg5w25"]
 
+[ext_resource type="Texture2D" uid="uid://dbwy086psfspf" path="res://microjogos/2026S1/projetoSoap/recursos/imagens/pexels-technobulka-9968139.jpg" id="1_wey72"]
+
 [node name="Main" type="Node2D" unique_id=1597121372]
 texture_filter = 1
+
+[node name="Fundo" type="Sprite2D" parent="." unique_id=1521638756]
+position = Vector2(960.99994, 647)
+scale = Vector2(0.3276588, 0.3276588)
+texture = ExtResource("1_wey72")

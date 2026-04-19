@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c8ol56evueacp"]
+
+[ext_resource type="Texture2D" uid="uid://b1s82trnv7g5g" path="res://microjogos/2026S1/projetoSoap/recursos/imagens/strong-muscular-hand-of-a-boxer-in-a-red-glove-throws-a-punch-isolated-on-a-transparent-background-free-png.png" id="1_mi2q0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mi2q0"]
+radius = 149.99988
+height = 505.99976
+
+[node name="Area2D" type="Area2D" unique_id=1608673833]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=749501101]
+position = Vector2(690.00006, 850.00006)
+rotation = 0.6279527
+scale = Vector2(1.0000001, 1.0000001)
+shape = SubResource("CapsuleShape2D_mi2q0")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=190785093]
+position = Vector2(660, 927.99994)
+rotation = 2.3177972
+scale = Vector2(0.52541965, 0.5254196)
+texture = ExtResource("1_mi2q0")
+flip_v = true

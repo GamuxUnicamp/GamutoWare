@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://crsjg03rqmd4a"]
+
+[ext_resource type="Texture2D" uid="uid://c2qa1qa5tstfy" path="res://microjogos/2026S1/projetoSoap/recursos/imagens/open-hand-with-five-fingers-free-png.png" id="1_3mysd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3mysd"]
+radius = 187.94946
+
+[node name="Area2D" type="Area2D" unique_id=1608673833]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1819034319]
+position = Vector2(716, 297)
+shape = SubResource("CircleShape2D_3mysd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=190785093]
+position = Vector2(699, 250)
+scale = Vector2(0.52541965, 0.5254196)
+texture = ExtResource("1_3mysd")
+flip_h = true
