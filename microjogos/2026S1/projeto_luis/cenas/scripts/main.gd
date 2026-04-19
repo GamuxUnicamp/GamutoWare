@@ -16,8 +16,6 @@ var paths = ["res://microjogos/2026S1/projeto_luis/recursos/imagens/Passaro1.png
 
 var passaro = passaros[idx]
 var path = paths[idx]
-
-var partida = true
 				
 # --------------------------------------------------------------------------------------------------
 # FUNÇÕES PADRÃO
@@ -27,19 +25,13 @@ func _ready():
 
 func _process(_delta):
 	
-	if Input.is_action_pressed("acao") and (partida == true):
+	if Input.is_action_pressed("acao"):
 		var foto = get_node(passaro).has_overlapping_areas()
 		var foco = $Camera/Slider.has_overlapping_areas()
 		if foto == true and foco == true:
 			$Camera/Fade.play("fade")	
 			Minigames.register_win(self)
-		else:
-			partida = false
 			
-	
-		
-		
-
 # --------------------------------------------------------------------------------------------------
 # SUAS FUNÇÕES
 # --------------------------------------------------------------------------------------------------
