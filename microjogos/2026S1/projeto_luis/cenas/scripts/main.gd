@@ -16,6 +16,7 @@ var paths = ["res://microjogos/2026S1/projeto_luis/recursos/imagens/Passaro1.png
 
 var passaro = passaros[idx]
 var path = paths[idx]
+var jogo = true
 				
 # --------------------------------------------------------------------------------------------------
 # FUNÇÕES PADRÃO
@@ -32,6 +33,7 @@ func _process(_delta):
 			$SomCamera.play(0.75)
 			$Camera/Fade.play("fade")	
 			Minigames.register_win(self) 
+			jogo = false
 			
 # --------------------------------------------------------------------------------------------------
 # SUAS FUNÇÕES

@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://ek3gsqhvs0x3" path="res://microjogos/2026S1/projeto_luis/recursos/imagens/FundoPassaros2png.png" id="3_r44ko"]
 [ext_resource type="Texture2D" uid="uid://b0uteb8qpbcw6" path="res://microjogos/2026S1/projeto_luis/recursos/imagens/Passaro1.png" id="5_e8ny7"]
 [ext_resource type="Texture2D" uid="uid://yxddr8l0sg4a" path="res://microjogos/2026S1/projeto_luis/recursos/imagens/grid_camera.svg" id="6_l2o4q"]
+[ext_resource type="Shader" uid="uid://dyj2jg463f32a" path="res://microjogos/2026S1/projeto_luis/recursos/blur.gdshader" id="7_e8ny7"]
 [ext_resource type="Script" uid="uid://cn3co3ac0jvsu" path="res://microjogos/2026S1/projeto_luis/cenas/scripts/slider.gd" id="7_l2o4q"]
 [ext_resource type="AudioStream" uid="uid://u3sm8uqsollt" path="res://microjogos/2026S1/projeto_luis/recursos/sons/camera.wav" id="10_q1f63"]
 [ext_resource type="AudioStream" uid="uid://b1bydj1ucevqp" path="res://microjogos/2026S1/projeto_luis/recursos/sons/passaros.wav" id="11_34tag"]
@@ -51,6 +52,15 @@ _data = {
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ht0mv"]
 radius = 159.05566
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_34tag"]
+shader = ExtResource("7_e8ny7")
+shader_parameter/blur_radius = 8
+shader_parameter/blur_scale = 6.9250003289375
+shader_parameter/darkness = 1.0000000475
+shader_parameter/fade_direction = 2
+shader_parameter/fade_cutoff = 1.0
+shader_parameter/fade_intensity = 1.00000004424012
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e7oaw"]
 size = Vector2(106, 73)
@@ -175,7 +185,7 @@ metadata/_edit_group_ = true
 shape = SubResource("CircleShape2D_ht0mv")
 
 [node name="Passaro5" type="Area2D" parent="Passaros" unique_id=1216449181]
-position = Vector2(10901.907, 1019.32104)
+position = Vector2(10901.906, 960.7954)
 metadata/_edit_group_ = true
 
 [node name="Passaro5" type="CollisionShape2D" parent="Passaros/Passaro5" unique_id=82202790]
@@ -183,6 +193,14 @@ shape = SubResource("CircleShape2D_ht0mv")
 
 [node name="Camera" type="Area2D" parent="." unique_id=1456411817]
 script = ExtResource("3_n22cp")
+
+[node name="Blur" type="ColorRect" parent="Camera" unique_id=268505669]
+material = SubResource("ShaderMaterial_34tag")
+offset_left = -209.0
+offset_top = -122.99999
+offset_right = -94.519135
+offset_bottom = -47.31694
+scale = Vector2(3.66, 3.66)
 
 [node name="Hitbox" type="CollisionShape2D" parent="Camera" unique_id=252082103]
 position = Vector2(0, 14.5)
