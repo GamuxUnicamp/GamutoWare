@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bymono0272xw" path="res://microjogos/2026S1/projeto_cruz/cenas/Flecha.tscn" id="5_uvs1o"]
 [ext_resource type="PackedScene" uid="uid://bq1arpwxo0qvw" path="res://microjogos/2026S1/projeto_cruz/cenas/Fundo.tscn" id="6_7pukw"]
 [ext_resource type="PackedScene" uid="uid://tj4a3qta71if" path="res://microjogos/2026S1/projeto_cruz/cenas/Chão.tscn" id="6_jx8q8"]
+[ext_resource type="AudioStream" uid="uid://dtndqv6ntm56y" path="res://microjogos/2026S1/projeto_cruz/recursos/sons/BeepBox-Song.wav" id="8_uuiyg"]
 
 [sub_resource type="Curve2D" id="Curve2D_uuiyg"]
 _data = {
@@ -63,6 +64,11 @@ z_index = -1
 z_as_relative = false
 position = Vector2(409, 234)
 scale = Vector2(1.92, 1.92)
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=636187758]
+stream = ExtResource("8_uuiyg")
+volume_db = 8.455
+autoplay = true
 
 [connection signal="timeout" from="EsqueletoTimer" to="." method="_on_esqueleto_timer_timeout"]
 [connection signal="timeout" from="FlechaTimer" to="." method="_on_flecha_timer_timeout"]
