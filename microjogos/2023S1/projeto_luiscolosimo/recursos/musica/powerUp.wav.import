@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c671w1uyh6cia"
-path="res://.godot/imported/powerUp.wav-85e9210dbb211e23f1acbf1b1216594b.sample"
+path="res://.godot/imported/powerUp.wav-4879333de70102ebb2a16edcdebed196.sample"
 
 [deps]
 
-source_file="res://microjogos/2024S1/lari-sem-cafe/recursos/powerUp.wav"
-dest_files=["res://.godot/imported/powerUp.wav-85e9210dbb211e23f1acbf1b1216594b.sample"]
+source_file="res://microjogos/2023S1/projeto_luiscolosimo/recursos/musica/powerUp.wav"
+dest_files=["res://.godot/imported/powerUp.wav-4879333de70102ebb2a16edcdebed196.sample"]
 
 [params]
 

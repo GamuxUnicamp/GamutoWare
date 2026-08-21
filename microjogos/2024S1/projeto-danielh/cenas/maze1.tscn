@@ -5,6 +5,7 @@
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4aesx"]
 resource_name = "cobble"
 texture = ExtResource("1_kp0mr")
+margins = Vector2i(5, 5)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0

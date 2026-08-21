@@ -109,6 +109,7 @@ shape = SubResource("RectangleShape2D_0mymo")
 metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Carro1" unique_id=858232016]
+texture_filter = 1
 rotation = 4.71239
 scale = Vector2(0.910152, 0.910152)
 texture = ExtResource("4_v7l48")
@@ -123,12 +124,14 @@ shape = SubResource("RectangleShape2D_ntidd")
 metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Carro3" unique_id=933953442]
+texture_filter = 1
 rotation = 4.71239
 scale = Vector2(4.69045, 4.87373)
 texture = ExtResource("5_al4rc")
 metadata/_edit_lock_ = true
 
 [node name="Carro4" type="CharacterBody2D" parent="." unique_id=1694953186 groups=["Veiculos"]]
+texture_filter = 1
 position = Vector2(2208, 256)
 script = ExtResource("5_kapmk")
 
@@ -137,6 +140,7 @@ shape = SubResource("RectangleShape2D_vdcth")
 metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Carro4" unique_id=1643958762]
+texture_filter = 1
 rotation = 4.71239
 scale = Vector2(6.70164, 5.978)
 texture = ExtResource("9_ipvil")
@@ -151,6 +155,7 @@ shape = SubResource("RectangleShape2D_mj80g")
 metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Carro2" unique_id=1202360883]
+texture_filter = 1
 rotation = -3.14159
 scale = Vector2(1.26998, 1.26998)
 texture = ExtResource("10_td3ja")
@@ -166,6 +171,7 @@ shape = SubResource("RectangleShape2D_vl0cq")
 metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Carro5" unique_id=1873902767]
+texture_filter = 1
 position = Vector2(0, 5.72205e-06)
 rotation = -1.5708
 scale = Vector2(-7.6784, 9.11891)
@@ -181,6 +187,7 @@ shape = SubResource("RectangleShape2D_h2jgb")
 metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Carro6" unique_id=672751412]
+texture_filter = 1
 rotation = -1.5708
 scale = Vector2(6.13383, 5.57862)
 texture = ExtResource("12_d0bag")
@@ -196,6 +203,7 @@ shape = SubResource("RectangleShape2D_xrxgi")
 metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Carro7" unique_id=348665602]
+texture_filter = 1
 rotation = -1.5708
 scale = Vector2(6.11851, 7.34376)
 texture = ExtResource("13_ljev4")

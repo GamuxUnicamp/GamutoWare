@@ -27,7 +27,6 @@ Global="*res://principal/cenas/autoloads/Global.tscn"
 SoundController="*res://principal/cenas/autoloads/SoundController.tscn"
 TranslationManager="*res://principal/cenas/autoloads/TranslationManager.tscn"
 Minigames="*res://principal/recursos/data/Minigames.gd"
-TestOverlayRunner="*res://addons/microgame-testing/scripts/autoloads/overlay-runner.gd"
 
 [display]
 
@@ -38,10 +37,6 @@ window/size/window_width_override=960
 window/size/window_height_override=540
 window/stretch/mode="viewport"
 window/size/fullscreen=true
-
-[editor_plugins]
-
-enabled=PackedStringArray()
 
 [filesystem]
 

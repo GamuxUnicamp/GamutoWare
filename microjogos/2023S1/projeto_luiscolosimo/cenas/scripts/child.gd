@@ -19,4 +19,5 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("acao") and dentro:
 		$"Hide".hide()
 		$"Show".show()
-		get_parent().register_win()
+		Minigames.register_win(self)
+		$PowerUp.play()
